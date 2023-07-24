@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-deployment
+  labels:
+    app: student-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-deployment
+  template:
+    metadata:
+      labels:
+        app: student-application
+    spec:
+      containers:
+        - name: spring-boot-app
+          image: us-central1-docker.pkg.dev/studentproject-393806/codelabrepo/hello-students
+          ports:
+            - containerPort: 8080
