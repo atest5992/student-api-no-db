@@ -3,12 +3,12 @@ kind: Deployment
 metadata:
   name: student-deployment
   labels:
-    app: student-deployment
+    app: student-application
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: student-deployment
+      app: student-application
   template:
     metadata:
       labels:
