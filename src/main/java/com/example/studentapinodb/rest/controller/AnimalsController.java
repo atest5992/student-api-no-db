@@ -9,7 +9,7 @@ public class AnimalsController {
 
     @GetMapping
     public String getAnimal() {
-        return "Getting penguing";
+        return "Getting penguing updated";
     }
 
     @GetMapping("/{id}")
