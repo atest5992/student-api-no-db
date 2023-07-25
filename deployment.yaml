@@ -17,6 +17,6 @@ spec:
       containers:
         - name: spring-boot-app
           imagePullPolicy: Never
-          image: us-central1-docker.pkg.dev/studentproject-393806/codelabrepo/hello-students:1.0
+          image: us-central1-docker.pkg.dev/studentproject-393806/codelabrepo/hello-students:1
           ports:
             - containerPort: 8080
